@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User
+from django.shortcuts import render
 from rest_framework import generics, permissions, renderers, viewsets
 from rest_framework.decorators import api_view, detail_route
 from rest_framework.response import Response
@@ -37,3 +38,6 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+def tictactoe(request):
+    return render(request, 'snippets/tictactoe.html', {})
