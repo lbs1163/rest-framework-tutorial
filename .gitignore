@@ -5,6 +5,7 @@
 .*
 env
 /myvenv/
+/node_modules/
 
 # Accept these files in the repository
 !.gitignore
