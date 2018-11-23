@@ -5,6 +5,7 @@
 env
 /myvenv/
 /node_modules/
+webpack-stats.json
 
 # Accept these files in the repository
 !.gitignore
