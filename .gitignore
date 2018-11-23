@@ -2,7 +2,6 @@
 *.sqlite3
 *.pyc
 *~
-.*
 env
 /myvenv/
 /node_modules/
