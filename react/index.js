@@ -1,15 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-class HelloWorld extends React.Component {
-  render() {
-    return (
-      <p>Hello, World!</p>
-    )
-  }
-}
+import Game from './Game';
 
 ReactDOM.render(
-  <HelloWorld />,
+  <Game />,
   document.getElementById('tictactoe')
 );

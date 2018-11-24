@@ -1,3 +1,13 @@
+{% load static %}
 {% load render_bundle from webpack_loader %}
-<div id='tictactoe'></div>
-{% render_bundle 'main' %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link href='{% static 'snippets/css/tictactoe.css' %}' rel='stylesheet' />
+    </head>
+    <body>
+        <div id='tictactoe'></div>
+    </body>
+    {% render_bundle 'main' %}
+</html>

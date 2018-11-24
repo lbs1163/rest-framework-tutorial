@@ -6,6 +6,7 @@ env
 /myvenv/
 /node_modules/
 webpack-stats.json
+/snippets/static/snippets/js/bundle/
 
 # Accept these files in the repository
 !.gitignore
