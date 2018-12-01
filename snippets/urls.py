@@ -1,4 +1,5 @@
-from django.conf.urls import include, url
+from django.conf.urls import include
+from django.urls import path
 from rest_framework.routers import DefaultRouter
 
 from snippets import views
@@ -11,6 +12,10 @@ router.register(r'users', views.UserViewSet)
 # The API URLs are now determined automatically by the router.
 # Additionally, we include the login URLs for the browsable API.
 urlpatterns = [
-    url('api/', include(router.urls)),
-    url('tictactoe/', views.tictactoe),
+    path('api/', include(router.urls)),
+    path('tictactoe/', views.tictactoe),
+    path('users/<int:pk>/', views.user_detail),
+    path('users/', views.user_list),
+    path('snippets/<int:pk>/', views.snippet_detail),
+    path('snippets/', views.snippet_list),
 ]

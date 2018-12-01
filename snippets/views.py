@@ -44,28 +44,28 @@ def tictactoe(request):
     return render(request, 'snippets/tictactoe.html', {})
 
 def user_list(request):
-    return render(request, 'snippets/base.html', {'div_id': 'user_list'})
+    return render(request, 'snippets/base.html', {'div_id': 'user-list'})
 
 def user_detail(request, pk=None):
     if not User.objects.filter(pk=pk).exists():
         raise Http404()
 
-    return render(request, 'snippets/base.html', {'div_id': 'user_detail'})
+    return render(request, 'snippets/base.html', {'div_id': 'user-detail'})
 
 def snippet_list(request):
-    return render(request, 'snippets/base.html', {'div_id': 'snippet_list'})
+    return render(request, 'snippets/base.html', {'div_id': 'snippet-list'})
 
 def snippet_detail(request, pk=None):
     if not User.objects.filter(pk=pk).exists():
         raise Http404()
 
-    return render(request, 'snippets/base.html', {'div_id': 'snippet_detail'})
+    return render(request, 'snippets/base.html', {'div_id': 'snippet-detail'})
 
 def snippet_create(request):
-    return render(request, 'snippets/base.html', {'div_id': 'snippet_create'})
+    return render(request, 'snippets/base.html', {'div_id': 'snippet-create'})
 
 def snippet_edit(request, pk=None):
     if not User.objects.filter(pk=pk).exists():
         raise Http404()
 
-    return render(request, 'snippets/base.html', {'div_id': 'snippet_edit'})
+    return render(request, 'snippets/base.html', {'div_id': 'snippet-edit'})
