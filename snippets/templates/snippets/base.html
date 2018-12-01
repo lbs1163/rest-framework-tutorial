@@ -1,0 +1,13 @@
+{% load static %}
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snippets</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    </head>
+    <body>
+        <div id="{{ div_id }}"></div>
+    </body>
+    {% render_bundle 'main' %}
+</html>
